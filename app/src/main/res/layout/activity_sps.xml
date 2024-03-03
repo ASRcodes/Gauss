@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7F8F8"
+    tools:context=".sps">
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Stone"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/paper"
+        app:layout_constraintEnd_toStartOf="@+id/paper"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#00BCD4"
+        android:text="paper"
+        android:textColor="#070000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scissor"
+        app:layout_constraintStart_toEndOf="@+id/rock" />
+
+    <Button
+        android:id="@+id/scissor"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#F44336"
+        android:text="Scissor"
+        android:textColor="#0B0000"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/paper" />
+
+    <ImageView
+        android:id="@+id/stone"
+        android:layout_width="284dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="212dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rock2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="327dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="272dp"
+        app:layout_constraintStart_toEndOf="@+id/stone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/paper1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="57dp"
+        android:text="Computer"
+        android:textColor="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/stone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="61dp"
+        android:text="YOU"
+        android:textColor="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="348dp"
+        android:layout_height="62dp"
+        android:text="Welcome to Stone,Paper,Scissor GAME"
+        android:textColor="#FF5722"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
